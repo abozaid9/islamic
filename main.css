@@ -51,7 +51,7 @@ a{text-decoration: none;display: block;}
 .header input , .header label{
     display: block;
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 40px;
 }
 .header input{display: none;}
