@@ -1,0 +1,371 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{background-color:#00663A ;direction: rtl;}
+:root{
+    --mainColor:#02d77e;
+    --textColor:#FBBF07;
+    --bgColor:#015531;
+    --pColor:#02d77eac;
+    --textFont:'rabar';
+    --quranFont:'kufi';
+
+}
+a{text-decoration: none;display: block;}
+.container{width: 80%;margin: auto;}
+.flex{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.btn{
+    width: 120px;
+    height: 35px;
+    border-radius:3px;
+    font-family: var(--textFont);
+    outline: none;
+    border: none;
+    transition: all  .3s linear;
+    font-weight: bold;
+    cursor: pointer;
+}
+/**********************************************************************************/
+.header{position: relative;box-shadow: 1px 1px 4px 2px var(--mainColor);}
+.logo{
+    width: 30%;
+    color: var(--textColor);
+    font-size: 30px;
+    font-family: 'b-sepideh';
+    cursor: pointer;
+}
+.nav{width: 70%;}
+.menu{list-style: none;}
+.list{display: inline-block;}
+.header a{
+    padding: 20px;
+    color: var(--mainColor);
+    font-size: 22px;
+    font-weight: bold;
+    font-family:var(--textFont);
+}
+.header input{display: none;}
+.header input , .header label{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.header input{display: none;}
+
+.header label{
+    background-image: url("icons8-menu-52.png");
+    background-size: cover;
+    padding: 20px;
+}
+.header input:checked ~ .nav{display: block;}
+/**********************************************************************************/
+@media only screen and (min-width: 992px){
+    /* for taplet */
+    .header label{display: none;}
+}
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    /* for phone */
+    .logo{width: 70%;}
+    .nav{
+        display: none;
+        text-align: center;
+        width: 100%;
+    }
+    .list{display: inline;}
+    .header a:hover{
+        color: var(--bgColor);
+        background-color: var(--mainColor);
+    }
+}
+/**********************************************************************************/
+.home_info{width: 50%;}
+.home_title{
+    font-size: 3rem;
+    font-family: var(--textFont);
+    color: var(--mainColor);
+    text-shadow: 1px 2px 3px #012c19;
+    margin-bottom: 20px;
+}
+.home_desc{
+    width: 79%;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    line-height: 50px;
+    color:#02d77eac;
+}
+
+.home_image{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: var(--mainColor);
+    overflow: hidden;
+}
+.home button{
+    font-size: 1.5rem;
+    color:#012c19;
+    background: linear-gradient(to left,#02d77eac,#FBBF07);}
+.home button:hover{background: linear-gradient(to left,#FBBF07,#02d77eac );}
+/**********************************************************************************/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* for labtop */
+    .home .container{width: 90%;}
+    .home_title{font-size: 1.9rem;}
+    .image1{display: none;}
+    .home_desc{width: 100%;font-size: 1.8rem;}
+    .home_image{
+        width: 50%;
+        height: 500px;
+        background-image: url("—Pngtree—vector\ islamic\ mosque\ design\ with_6112024.png");
+        background-size: 100% 100%;}   
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* for taplet */
+    .home_info{width: 100%;}
+    .home_image{
+        margin-top: 30px;
+        width: 100%;
+        height: 500px;
+        background-image: url("—Pngtree—vector\ islamic\ mosque\ design\ with_6112024.png");
+        background-size: 100% 100%;}
+    .home_desc{width: 90%;}
+    .image1{display: none;}
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+    .home{margin-top: 50px;}
+    .home .container{width: 90%;} 
+    .home_info{width: 100%;}
+    .home_title{font-size: 1.6rem;}
+    .home_desc{
+        width: 100%;
+        font-size: 1.2rem;
+        line-height:inherit;}
+    .home_image{
+        margin-top: 30px;
+        width: 100%;
+        height: 350px;
+        background-image: url("—Pngtree—vector\ islamic\ mosque\ design\ with_6112024.png");
+        background-size:100% 100%;
+    }
+    .image1{display: none;}
+}
+
+.end{background-color: #012315;color: #FBBF07;text-align: center;}
+/**********************************************************************************/
+.about{
+    padding-bottom: 50px;
+    background-color: #02d77e;
+    text-align: center;
+    color: #012c19;}
+.about_item_title{ 
+    font-size: 8rem;
+    text-shadow: 1px 2px 3px var(--textColor);
+    font-family: var(--quranFont);}
+.about_desc{font-family: var(--textFont);}
+/**********************************************************************************/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* for labtop */
+    .about_item_title{font-size: 6rem;}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* for taplet */
+    .about_item_title{font-size: 6rem;}
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+    .about_item_title{font-size: 2.5rem;}
+}
+/**********************************************************************************/
+.cover{padding:50px 0px;}
+.cover>img{filter:contrast(200%);}
+.cover_info{
+    overflow: hidden;
+    border-top-right-radius:50%;
+    border-top-left-radius:50%;
+    width: 22.222%;
+    background-color: #FBBF07;
+    text-align: center;
+    margin-bottom: 20px;
+    background: 
+              linear-gradient(to bottom,#FBBF07,#02d77e);
+}
+.cover_info:hover{transform: scaleX(1.1);}
+.cover_title{
+    font-size: 1.6rem;
+    font-family: var(--textFont);
+    color: var(--bgColor);
+}
+.cover_info button{
+    font-size: 1.1rem;
+    width: 100%;
+    background:linear-gradient( #02d77e, #FBBF07);}
+.cover_info button:hover{
+    width: 100%;
+    background:linear-gradient( #02d77e, #FBBF07,#02d77e);}
+/**********************************************************************************/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* for labtop */
+    .cover_info{width: 30.33%;}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* for taplet */
+    .cover_info{width: 48%;}
+
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+    .cover_info{width: 100%;}
+
+}
+
+
+
+/**********************************************************************************/
+.advice{background-color:#FBBF07;text-align:center;font-family: var(--textFont);}
+.advice-title h2{
+    font-size: 3rem;
+    color:var(--bgColor);
+    font-weight: bold;
+    padding-bottom: 1%;
+}
+.advice-bransh{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1%;}
+.advice-bransh .btn{
+    width:9%;
+    height: 120px;
+    background-color: #10BE76;
+    margin: 3px;
+    
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius:50% ;
+    border-top-left-radius:50% ;
+}
+.advice-bransh .btn a{    
+    font-weight: bold;
+    height: 100%;
+    padding-top: 40%;
+    color:#FBBF07;
+}
+.advice-bransh .btn a:hover{  
+    color: #012315;
+}  
+.advice-bransh .btn:hover{ 
+    background-color: #FBBF07; 
+    border: 1px solid #038a52; 
+}
+
+/**********************************************************************************/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* for taplet */
+    .advice-bransh .btn a{ padding-top: 10%;}
+    .advice-bransh .btn{width:30%;}
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+    .advice-bransh .btn{
+        width:30%;}
+}
+
+
+/**********************************************************************************/
+form{
+    padding: 50px;
+    text-align: center;
+    font-family: var(--textFont);
+    background: rgba(0,0, 0,0.5);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgba(255,255,255,0.125);
+}
+.form_title{font-size: 2rem;color: #02d77e;}
+.contact input{
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #02d77e;
+    outline: none;
+}
+.contact button{
+    font-size: 1.1rem;
+    width: 100%;
+    background:linear-gradient(to left, #02d77e, #FBBF07);}
+.contact button:hover{
+    width: 100%;
+    background:linear-gradient( #02d77e, #FBBF07,#02d77e);}
+textarea{
+    text-align: center;
+    padding-top: 10px;
+    color: #02d77e;
+    border-radius: 10px;
+    width: 100%;
+}
+/**********************************************************************************/
+
+/**********************************************************************************/
+.footer{background-color: #02d77e;font-family: var(--textFont);}
+.footer1 a{color: var(--bgColor);}
+.footer1 .list{display: inline;}
+.footer3 .logo{width: 100%;}
+/**********************************************************************************/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* for labtop */
+    
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* for taplet */
+    .footer1 , .footer2 , .footer3{width: 33.33%;}
+
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+    .footer1 , .footer2 , .footer3{width: 100%;}
+
+}
+
+
+
+/**********************************************************************************/
+.content_story{width: 100%;height: 80vh;text-align: center;margin:20% auto 0 auto;font-family: var(--quranFont);font-size: 8rem;}
+/**********************************************************************************/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* for labtop */
+    
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* for taplet */
+    .content_story{font-size: 3.5rem;margin:5% auto 0% auto}
+
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+    .content_story{font-size: 2rem;margin:5% auto 0% auto}
+
+}
+
+
+/**********************************************************************************/
+/**********************************************************************************/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* for labtop */
+    
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* for taplet */
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+
+}
